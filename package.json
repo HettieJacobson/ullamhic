@@ -1,0 +1,66 @@
+{
+  "name": "ullamhic",
+  "description": "A React library for working with Internet computer Actors",
+  "author": "JacksonGerlach",
+  "license": "MIT",
+  "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna run clean",
+    "lerna-publish": "yarn build && lerna publish",
+    "test": "lerna run test",
+    "e2e": "cd e2e && sh ./test.sh"
+  },
+  "devDependencies": {
+    "@babel/core": "7.23",
+    "@babel/preset-env": "7.23",
+    "@babel/preset-react": "7.23",
+    "@babel/preset-typescript": "7.23",
+    "@dfinity/agent": "0.20",
+    "@dfinity/candid": "0.20",
+    "@dfinity/identity": "^0.20",
+    "@dfinity/principal": "^0.20",
+    "@peculiar/webcrypto": "^1.4",
+    "@testing-library/jest-dom": "^6.1",
+    "@testing-library/react": "^14.1",
+    "@tsconfig/recommended": "^1.0",
+    "@types/jest": "^29.5",
+    "@types/react": "18.2",
+    "@types/react-test-renderer": "^18.0",
+    "@types/xmlhttprequest": "^1",
+    "fake-indexeddb": "5.0.1",
+    "jest": "29.7",
+    "jest-fetch-mock": "^3.0",
+    "lerna": "^7",
+    "nx": "16.10.0",
+    "nx-cloud": "latest",
+    "react": "^18.2",
+    "react-dom": "^18.2",
+    "react-test-renderer": "18.2",
+    "svelte-jester": "3.0",
+    "text-encoding": "0.7.0",
+    "ts-jest": "29.1",
+    "typescript": "^5.3",
+    "whatwg-fetch": "3.6",
+    "xmlhttprequest": "^1.8"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HettieJacobson/ullamhic.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*",
+    "e2e"
+  ],
+  "bugs": {
+    "url": "https://github.com/HettieJacobson/ullamhic.git/issues"
+  },
+  "version": "1.0.0"
+}

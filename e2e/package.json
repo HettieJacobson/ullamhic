@@ -1,0 +1,27 @@
+{
+  "name": "hello-world",
+  "version": "0.0.0",
+  "private": true,
+  "main": "src/script.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "sh ./test.sh",
+    "start": "npx jest"
+  },
+  "dependencies": {
+    "@dfinity/agent": "^0.20",
+    "@dfinity/candid": "^0.20",
+    "@dfinity/identity": "^0.20",
+    "@dfinity/principal": "^0.20",
+    "@ic-reactor/core": "*",
+    "@ic-reactor/react": "*",
+    "@ic-reactor/store": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "babel-jest": "^29.7.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
